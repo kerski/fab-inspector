@@ -5,7 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [4.0.0] - 2026-10-27
+
+### Breaking
+- The CLI now requires the [.NET 10 runtime](https://dotnet.microsoft.com/download/dotnet/10.0). .NET 8 reaches end of support on November 10, 2026.
 
 ### Changed
 - Upgraded all projects from .NET 8 to .NET 10 (LTS), ahead of .NET 8 end of support on November 10, 2026. The framework-dependent CLI builds now require the .NET 10 runtime; the WinForms and Avalonia UI builds remain self-contained.
@@ -15,6 +18,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Security
 - Bumped `Microsoft.Data.SqlClient` to 6.1.7 and pinned `System.Security.Cryptography.Pkcs` 10.0.14 to override a vulnerable transitive dependency (GHSA-846f-f764-76mx, GHSA-2fmv-rv2c-59x7).
+
+[4.0.0]: https://github.com/NatVanG/fab-inspector/compare/v3.5.0...v4.0.0
 
 ## [3.5.0] - 2026-07-22
 
